@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex</title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pokedex.css">
+  </head>
+  
+  <body>
+    <main>
+      <div class="pokedex-container">
+        <div class="top-section">
+          <div class="on-off-container">
+            <div class="on-off-thing js-lights js-on-off-switch"></div>
+          </div>
+          <div class="button-container">
+            <div class="color-buttons js-lights" style="background-color: #ED1D26;"></div>
+            <div class="color-buttons js-lights" style="background-color: #FFF301;"></div>
+            <div class="color-buttons js-lights" style="background-color: #00A751;"></div>
+          </div>  
+        </div>
+        <div class="divider"></div>
+        <div class="bottom-section">
+          <div class="screen-container">
+            <div class="screen-light-holder">
+              <div class="screen-light js-lights"></div>
+              <div class="screen-light js-lights"></div>
+            </div>
+            <div class="screen js-lights"><img class="pokemon-img" src=""></div>
+            <div class="screen-bottom-container">
+              <div class="red-button"></div>
+              <div class="line-thingy-container">
+                <div class="line-thingy"></div>
+                <div class="line-thingy"></div>
+                <div class="line-thingy"></div>
+                <div class="line-thingy"></div>
+                <div class="line-thingy"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-button-containers">
+            <div class="black-button"></div>
+            <div class="another-button-container">
+              <div class="start-select-button-container">
+                <div class="start-select-button" style="background-color: #ED1D26;"></div>
+                <div class="start-select-button" style="background-color: #00A89D;"></div>
+              </div>
+              <div class="trackpad js-lights"></div>
+            </div>
+            <div class="d-pad-container"></div>
+            <img src="d-pad.png" class="d-pad-image">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="side-bar">
+      <form>
+        <label>Enter a pokemon name or id!<input type="text" class="input-box"><input class="submit-button js-submit-button" type="submit" value="Go!"></label>
+        <div class="pokemon-details">
+          
+        </div>
+       
+      </form>
+      
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
